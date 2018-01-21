@@ -20,7 +20,8 @@ $font-family-base:       $font-family-sans-serif;
 
 // Colors Overwrites
 
- $white:  #C0B3A0;
+ $white:  #fff;
+ $scrub:  #C0B3A0;
 $gray-100: #f8f9fa;
 // $gray-200: #e9ecef;
 // $gray-300: #dee2e6;
@@ -43,8 +44,8 @@ $gray-800: #343a40;
 // $teal:    #20c997;
 // $cyan:    #17a2b8;
 
-$primary:          #22252c; 
-// $secondary:     $gray-600 !default;
+$primary:          #22252c !default; 
+$secondary:        #3F3250 !default;
  $success:         $pink !default;
 // $info:          $cyan !default;
 // $warning:       $yellow !default;
