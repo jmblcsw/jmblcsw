@@ -1,5 +1,5 @@
-<footer class="site-footer">
-  <div class="container mt-5 mb-1">
+<footer>
+  <!-- <div class="container mt-5 mb-1">
   <div class="row align-items-end">
     <div class="col text-center">
       <img src="{{site.baseurl}}/img/BB.png" width="60" height="60" alt="{{ site.title }}" />
@@ -39,5 +39,62 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+ <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-primary">
+
+  
+    <div class="col">
+      <div class="row">
+      <div class="col">
+         <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="nav-item nav-link">
+              <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+      </div>
+      <div class="col">
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="nav-item nav-link">
+              <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+            </a>
+      </div> 
+      </div>   
+    </div>
+    <div class="col text-center">
+      <a class="navbar-brand" href="{{site.baseurl}}/">
+        <img src="{{site.baseurl}}/img/BB.png" width="60" height="60" alt="{{ site.title }}" />
+      </a>
+    </div>
+    <div class="col">
+      <div class="row">
+          {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <div class="col">
+          <a class="nav-item nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+        </div>
+        {% endif %}
+        {% endfor %}
+         
+        </div>
+
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+     
+  
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+         
+        </ul>
+      </div> -->
+    </div>
+
+
+  
+    </nav>
 </footer>
